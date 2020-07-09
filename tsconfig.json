@@ -1,23 +1,37 @@
 {
   "include": ["src", "types"],
-  "compilerOptions": {
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
-    "rootDir": "./src",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
-    "jsx": "react",
-    "esModuleInterop": true
-  }
+  // "compilerOptions": {
+  //   "module": "esnext",
+  //   "lib": ["dom", "esnext"],
+  //   "importHelpers": true,
+  //   "declaration": true,
+  //   "sourceMap": true,
+  //   "rootDir": "./src",
+  //   "strict": true,
+  //   "noUnusedLocals": true,
+  //   "noUnusedParameters": true,
+  //   "noImplicitReturns": true,
+  //   "noFallthroughCasesInSwitch": true,
+  //   "moduleResolution": "node",
+  //   "baseUrl": "./",
+  //   "paths": {
+  //     "*": ["src/*", "node_modules/*"]
+  //   },
+  //   "jsx": "react",
+  //   "esModuleInterop": true
+  // }
+  
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "module": "es6",
+      "jsx": "react",
+      "target": "es5",
+      "allowJs": false,
+      "moduleResolution": "node",
+      "declaration": true,
+      "lib": ["dom", "es5", "scripthost", "es6"]
+    }
+  
 }
